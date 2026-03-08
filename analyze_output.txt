@@ -1,0 +1,43 @@
+﻿Analyzing lib...                                                
+
+warning - The value of the local variable 'scale' isn't used - lib\core\services\marker_generator.dart:45:22 - unused_local_variable
+warning - The value of the local variable 'imageSize' isn't used - lib\core\services\marker_generator.dart:46:22 - unused_local_variable
+   info - The variable name 'paint_image' isn't a lowerCamelCase identifier - lib\core\services\marker_generator.dart:159:6 - non_constant_identifier_names
+warning - Unused import: 'package:supabase_flutter/supabase_flutter.dart' - lib\features\home\presentation\screens\food_detail_screen.dart:2:8 - unused_import
+warning - Unused import: '../../../../core/utils/error_utils.dart' - lib\features\home\presentation\screens\food_detail_screen.dart:5:8 - unused_import
+warning - Two keys in a map literal shouldn't be equal - lib\features\home\presentation\screens\home_screen.dart:426:7 - equal_keys_in_map
+warning - Unused import: '../../../../core/extensions/iterable_extensions.dart' - lib\features\home\presentation\screens\profile_screen.dart:5:8 - unused_import
+warning - Unused import: '../widgets/address_manager_sheet.dart' - lib\features\home\presentation\screens\profile_screen.dart:9:8 - unused_import
+  error - Expected to find ';' - lib\features\home\presentation\screens\profile_screen.dart:405:7 - expected_token
+warning - Dead code - lib\features\home\presentation\screens\profile_screen.dart:405:8 - dead_code
+  error - Expected an identifier - lib\features\home\presentation\screens\profile_screen.dart:405:8 - missing_identifier
+  error - Expected to find ';' - lib\features\home\presentation\screens\profile_screen.dart:405:8 - expected_token
+  error - Unexpected text ';' - lib\features\home\presentation\screens\profile_screen.dart:405:8 - unexpected_token
+  error - Expected an identifier - lib\features\home\presentation\screens\profile_screen.dart:406:5 - missing_identifier
+  error - Unexpected text ';' - lib\features\home\presentation\screens\profile_screen.dart:406:5 - unexpected_token
+   info - Unnecessary empty statement - lib\features\home\presentation\screens\profile_screen.dart:406:6 - empty_statements
+  error - Expected to find ';' - lib\features\home\presentation\screens\profile_screen.dart:458:7 - expected_token
+warning - Dead code - lib\features\home\presentation\screens\profile_screen.dart:458:8 - dead_code
+  error - Expected an identifier - lib\features\home\presentation\screens\profile_screen.dart:458:8 - missing_identifier
+  error - Expected to find ';' - lib\features\home\presentation\screens\profile_screen.dart:458:8 - expected_token
+  error - Unexpected text ';' - lib\features\home\presentation\screens\profile_screen.dart:458:8 - unexpected_token
+  error - Expected an identifier - lib\features\home\presentation\screens\profile_screen.dart:459:5 - missing_identifier
+  error - Unexpected text ';' - lib\features\home\presentation\screens\profile_screen.dart:459:5 - unexpected_token
+   info - Unnecessary empty statement - lib\features\home\presentation\screens\profile_screen.dart:459:6 - empty_statements
+  error - Invalid constant value - lib\features\profile\presentation\screens\manage_addresses_screen.dart:73:66 - invalid_constant
+  error - Undefined name 'cravnPrimary' - lib\features\profile\presentation\screens\manage_addresses_screen.dart:73:66 - undefined_identifier
+
+flutter : 26 issues found. 
+(ran in 1.4s)
+At line:1 char:1
++ flutter analyze lib/ 2>&1 | 
+Out-File -FilePath 
+analyze_output.txt -En ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : 
+    NotSpecified: (26 issues  
+   found. (ran in 1.4s):Str   
+ ing) [], RemoteException
+    + FullyQualifiedErrorId : 
+    NativeCommandError
+ 

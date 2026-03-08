@@ -1,0 +1,83 @@
+name: cravn_flutter
+description: Crav'n - Food waste reduction app converted from Figma React export to Flutter.
+publish_to: "none"
+version: 0.1.0
+
+environment:
+  sdk: ">=2.18.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.5
+  flutter_localizations:
+    sdk: flutter
+  google_maps_flutter: ^2.5.0
+  supabase_flutter: ^2.0.0
+  geolocator: ^10.1.0
+  permission_handler: ^11.0.1
+  image_picker: ^1.0.7
+  uuid: ^4.4.0
+  flutter_dotenv: ^5.1.0
+  google_maps_webservice: ^0.0.20-nullsafety.5
+
+  url_launcher: any
+  firebase_core: ^3.8.1
+  firebase_messaging: ^15.1.6
+  firebase_auth: ^5.3.4
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_launcher_icons: ^0.11.0
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/
+    - assets/map_style.json
+    # Ensure logo asset is bundled (explicit entry to avoid missing file issues)
+    # NOTE: Directory case corrected from images -> Images to match project structure
+    - assets/Images/Logo.png
+  # Bundled fonts exported from Figma (SF Pro Display family)
+  fonts:
+    - family: "SF Pro Display"
+      fonts:
+        - asset: assets/Fonts/SFPRODISPLAYULTRALIGHTITALIC.OTF
+          weight: 200
+          style: italic
+        - asset: assets/Fonts/SFPRODISPLAYTHINITALIC.OTF
+          weight: 100
+          style: italic
+        - asset: assets/Fonts/SFPRODISPLAYLIGHTITALIC.OTF
+          weight: 300
+          style: italic
+        - asset: assets/Fonts/SFPRODISPLAYREGULAR.OTF
+          weight: 400
+        - asset: assets/Fonts/SFPRODISPLAYMEDIUM.OTF
+          weight: 500
+        - asset: assets/Fonts/SFPRODISPLAYSEMIBOLDITALIC.OTF
+          weight: 600
+          style: italic
+        - asset: assets/Fonts/SFPRODISPLAYBOLD.OTF
+          weight: 700
+        - asset: assets/Fonts/SFPRODISPLAYHEAVYITALIC.OTF
+          weight: 800
+          style: italic
+        - asset: assets/Fonts/SFPRODISPLAYBLACKITALIC.OTF
+          weight: 900
+          style: italic
+  # Notes:
+  # - Filenames mirror the Figma export in `assets/Fonts`.
+  # - We declare weights and italic styles when the filename indicates italic.
+  # - If you prefer a different family name, update the `family` above and the
+  #   Flutter `TextStyle` usages accordingly.
+
+# Configuration for flutter_launcher_icons to generate platform launcher icons
+# from the provided `assets/images/Logo.png` image. Run:
+# flutter pub get
+# flutter pub run flutter_launcher_icons:main
+flutter_icons:
+  android: true
+  ios: true
+  image_path: assets/images/Logo.png
